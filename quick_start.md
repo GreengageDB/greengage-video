@@ -1,4 +1,4 @@
-[//]: # (This cheat sheet complements the [title]&#40;youtube_link&#41; video tutorial.)
+This cheat sheet complements the [Quick start with Greengage DB](https://youtu.be/Nz_8h9AyhWE) video tutorial.
 
 # Prerequisites
 
@@ -237,10 +237,11 @@ Replace the hostnames and IP addresses with values that fit your environment.
 
 ## Enable n-n passwordless SSH
 
-1. Use the gpssh-exkeys utility:
-   ```shell
-   gpssh-exkeys -f hostfile_all_hosts
-   ```
+Use the gpssh-exkeys utility:
+
+```shell
+gpssh-exkeys -f hostfile_all_hosts
+```
    
 
 ## Initialize a cluster
