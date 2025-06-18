@@ -13,6 +13,9 @@ Replace the hostnames and IP addresses with values that fit your environment.
 
 # Prepare the environment
 
+> [!NOTE]  
+> The steps in this section should be performed on all cluster hosts.
+
 ## Create the gpadmin user
 
 1. Create the `gpadmin` group:
@@ -87,6 +90,9 @@ Replace the hostnames and IP addresses with values that fit your environment.
 
 
 # Build from sources
+
+> [!NOTE]  
+> The steps in this section should be performed on all cluster hosts.
 
 ## Clone the Greengage DB repository
 
@@ -189,6 +195,9 @@ Replace the hostnames and IP addresses with values that fit your environment.
 
 ## Generate SSH key pairs
 
+> [!NOTE]  
+> The key pairs should be generated on all cluster hosts.
+
 1. Generate an SSH key pair for the `gpadmin` user:
    ```shell
    ssh-keygen -t rsa -b 4096
@@ -237,7 +246,7 @@ Replace the hostnames and IP addresses with values that fit your environment.
 
 ## Enable n-n passwordless SSH
 
-Use the gpssh-exkeys utility:
+Use the `gpssh-exkeys` utility:
 
 ```shell
 gpssh-exkeys -f hostfile_all_hosts
